@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h3{
+    color: rgba(23, 14, 146, 0.904);
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.banner{
+    width: 100%;
+    height: 180vh;
+    background-image: url('img/main.jpg');
+    background-image: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.801)); 
+    margin: 0;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:  #009688;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #962a00;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+table{
+    border: 2px solid black;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+th,td{
+    color: rgb(24, 32, 39);
+    padding-top: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.up{
+    border-top: 2px solid black;
+    padding-top: 20px;
+}
+.pay{
+    width: 60%;
+    height: 100vh;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.middle{
+    color: rgb(29, 98, 189);
+    background-color: rgb(197, 192, 192);
+    padding: 5px;
+}
+.col{
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#up{
+    border-top: 2px solid black;
+    padding-top: 20px;
+}
+.price{
+    color: rgb(235, 27, 27);
+    font-weight: bolder;
+}
+.price1{
+    color: rgb(173, 116, 9);
+    font-weight: bolder;
+}
+
+
+
+ /* footer css */
+ *,*:before,*:after{
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+    margin: 0;
+    display: grid;
+    font-size: 14px;
+}
+footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #011c39;
+}
+.footer{
+    flex: 1 100%;
+    height: 100%;
+}
+.footer-left{
+    margin-right: 1.25rem;
+    margin-bottom: 2rem;
+}
+.footer-left img{
+    width: 30%;
+}
+h2{
+    font-weight: 600;
+    font-size: 19px;
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+.footer li{
+    line-height: 2rem;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer-right{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25rem;
+}
+.footer-right li .box a{
+    color: #999;
+    font-size: 18px;
+}
+.footer-right li .box a:hover{
+    color: rgb(241, 153, 153);
+    cursor: pointer;
+}
+.place{
+    padding-top: 30px;
+}
+.footer-bottom{
+    text-align: center;
+    color: #999;
+    padding-top: 150px;
+}
+.footer-left p{
+    padding-right: 20%;
+    color: #999;
+}
+.socials a{
+    background: #364a62;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.socials a i{
+    color: #e7f2f4;
+    padding: 16px 18px;
+    font-size: 20px;
+}
+.socials a i:hover{
+    cursor: pointer;
+    color: red;
+}
+@media screen and (min-width: 600px){
+    .footer-right > *{
+        flex: 1;
+    }
+    .footer-left{
+        flex: 1 0px;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
+}
+
+@media (max-width: 600px){
+    .footer{
+        padding: 15px;
+    }
+}
+
+
+
+
+/* Details */
+.infomation{
+    background: rgb(51, 50, 50);
+    margin-left: 430px;
+    margin-right: 430px;
+    margin-top: 50px;
+}
+.infomation .inform{
+    padding: 50px;
+}
+.infomation .inform:hover{
+    cursor: pointer;
+    background-color: #011c39;
+}
+.infomation .inform a{
+    text-decoration: none;
+}
+.infomation .inform h5{
+    font-size: 30px;
+    text-align: center;
+    padding: 50px;
+    color: rgb(255, 60, 60);
+}
+.infomation .inform p{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(231, 230, 225);
+}
+.infomation .inform p b{
+    font-weight: bolder;
+    color: #f3b91a;
+}
