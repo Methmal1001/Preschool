@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup images</title>
+
+    <link rel="stylesheet" href="css/popupstyle.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html">
+                <img class="logo" src="img/newlogo.jpg" alt="logo">
+            </a>
+
+            <h3>Sri Saranapaala Pre School</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Admission</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="#">Programms</a></li>
+            </ul>
+        </div>
+    
+    <div class="container">
+
+        <div class="last">
+            <h1>... ANNUAL CONCERT - 2022...</h1>
+
+        <div class="image-container">
+            <div class="image"><img src="images/concert/eighteen.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/fifteen.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/nineteen.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/one.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/seventeen.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/sixteen.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/therteen.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/twenty.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/twenty1.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/twenty2.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/twenty3.jpg" alt=""></div>
+            <div class="image"><img src="images/concert/twenty4.jpg" alt=""></div>
+        </div>
+        </div>
+
+        <div class="second">
+            <h1 class="topic">... SINGITHI KIDS FAIR - 2022...</h1>
+
+        <div class="image-container">
+            <div class="image"><img src="images/fair/eight.jpg" alt=""></div>
+            <div class="image"><img src="images/fair/eleven.jpg" alt=""></div>
+            <div class="image"><img src="images/fair/five.jpg" alt=""></div>
+            <div class="image"><img src="images/fair/four.jpg" alt=""></div>
+            <div class="image"><img src="images/fair/nine.jpg" alt=""></div>
+            <div class="image"><img src="images/fair/seven.jpg" alt=""></div>
+            <div class="image"><img src="images/fair/six.jpg" alt=""></div>
+            <div class="image"><img src="images/fair/ten.jpg" alt=""></div>
+            <div class="image"><img src="images/fair/three.jpg" alt=""></div>
+            <div class="image"><img src="images/fair/twel.jpg" alt=""></div>
+        </div>
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="images/fair/eight.jpg" alt="">
+        </div>
+
+    </div>
+
+    <br><br><br>
+
+    <!--Footer section-->
+<div class="place">
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="img/newlogo.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente iste odit eos quia quo! Laborum tempore,
+             ullam doloribus beatae ab debitis, architecto illum ex totam molestiae 
+             iure modi optio.</p>
+    
+             <div class="socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                
+             </div>
+        </div>
+    
+        <ul class="footer-right">
+            <li>
+                <h2>Useful Links</h2>
+    
+                <ul class="box">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Admission</a></li>
+                    <li><a href="#">Details</a></li>
+                    <li><a href="#">Programms</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h2>Contacts</h2>
+    
+                <ul class="box">
+                    <li><a href="#">+94 76**45**7</a></li>
+                    <li><a href="#">+9433 ***22137</a></li>
+                    <li><a href="#">abc1@gmail.com</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Address</h2>
+    
+                <ul class="box">
+                    <li><a href="#">No, 127</a></li>
+                    <li><a href="#">Circular Road,</a></li>
+                    <li><a href="#">Divulapitiya</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+        <div class="footer-bottom">
+            <p>All Rights reserved by &copy;conceptial 2022.</p>
+        </div>
+    </footer>
+</div>
+</div>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

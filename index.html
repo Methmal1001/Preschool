@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDress</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    
+</head>
+<body>
+
+   <div class="cover">
+     <!-- Navbar -->
+     <header>
+        <div class="nav container">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="img/newlogo.jpg" alt="">
+            </a>
+
+            <!-- Nav list-->
+            <ul class="navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="registration.html">Admission</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="popupimage.html">Programms</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- home -->
+    <section class="home" id="home">
+         
+    
+        <div class="home-text">
+            <h1>Sri Saranapaala <br><span>Pre School</span></h1>
+            <p>The institute of developing you child's early childhood and increase the good habits and attitudes with <br>
+                religional background.</p>
+
+            <!-- Home btn -->
+            <a href="popupimage.html" class="btn">Events</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about container" id="about">
+        <div class="about-img">
+            <div class="content1">
+                <div class="clearfix">
+                    
+                    <div class="box" style="background-color:rgb(255, 255, 255);">
+                    <a href="popupimage.html"><p><img class="img" src="img/first.jpg"></p></a>
+                    <a href="popupimage.html"><p><img class="img" src="img/student.jpg"></p></a>
+                    <a href="popupimage.html"><p><img class="img" src="images/concert/sixteen.jpg"></p></a>
+                    <a href="popupimage.html"><p><img class="img" src="images/concert/twenty3.jpg"></p></a>
+                    <a href="popupimage.html"><p><img class="img" src="images/fair/nine.jpg"></p></a>
+                    <a href="popupimage.html"><p><img class="img" src="images/fair/nine.jpg"></p></a>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("img");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 6000);    
+        }
+    </script>
+
+    
+    <!-- Blog -->
+    <section class="blog" id="blog">
+        <div class="heading">
+            <span>2023</span>
+            <h2>Upcomming Events</h2>
+            <p>Look at this news section, for update your time with our new upcomming events in near future....</p>
+        </div>
+        <!-- Blog container -->
+        <div class="blog-container container">
+            <!-- Box1 -->
+            <div class="box">
+                <a href="details.html"><img src="img/pmeeting.jpg" alt=""></a>
+                <span>05th of January</span>
+                <h3>New Intake of 2023.</h3>
+                <p>We are re-start our learning activities on <b>03rd of January 2023</b>.</p>
+                <a href="details.html" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+            <div class="box">
+                <a href="details.html"><img src="img/pmeeting.jpg" alt=""></a>
+                <span>05th of January</span>
+                <h3>New Intake of 2023.</h3>
+                <p>We are re-start our learning activities on <b>03rd of January 2023</b>.</p>
+                <a href="details.html" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+            <div class="box">
+                <a href="details.html"><img src="img/pmeeting.jpg" alt=""></a>
+                <span>05th of January</span>
+                <h3>New Intake of 2023.</h3>
+                <p>We are re-start our learning activities on <b>03rd of January 2023</b>.</p>
+                <a href="details.html" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">SRS<span>Preschool</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-google' ></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>Useful Links</h3>
+                <a href="index.html">Home</a>
+                <a href="registration.html">Admission</a>
+                <a href="details.html">Details</a>
+                <a href="popupimage.html">Programms</a>
+                
+            </div>
+
+            <div class="footer-box">
+                <h3>Contacts</h3>
+                <a href="#">+94 726065901</a>
+                <a href="#">+94 767623863</a>
+                <a href="#">hau.demans@gmail.com</a>
+            </div>
+            
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">Sri Saranapaala Pre School,</a>
+                <a href="#">Puraana Maha Bodhi Viharaya,</a>
+                <a href="#">Dunagaha.</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copy right -->
+    <div class="copyright">
+        <p>&#169; All Right Reserved by UM.</p>
+    </div>
+
+   
+    
+   </div>
+</body>
+</html>
